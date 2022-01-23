@@ -113,7 +113,7 @@ class MainApp(App):
              # preencher lista de vendas
 
             try:
-                print(requisicao_dic)
+                # print(requisicao_dic)
                 vendas = requisicao_dic['vendas']
                 self.vendas = vendas
                 pagina_homepage = self.root.ids["homepage"]
@@ -128,7 +128,7 @@ class MainApp(App):
                     lista_vendas.add_widget(banner)
 
             except Exception as exececao:
-                print(exececao)
+                # print(exececao)
                 pass
 
             # preencher equipe de vendas
@@ -302,7 +302,7 @@ class MainApp(App):
 
             requisicao = requests.get(f"https://aplicativosvendashash-22f77-default-rtdb.firebaseio.com/{self.local_id}/total_vendas.json?auth={self.id_token}")
             requisicao_dic = requisicao.json()
-            print(requisicao_dic)
+            # print(requisicao_dic)
             total_vendas = float(requisicao_dic)
             total_vendas += preco
 
@@ -335,7 +335,7 @@ class MainApp(App):
         requisicao = requests.get(
             f'https://aplicativosvendashash-22f77-default-rtdb.firebaseio.com/.json?orderBy="id_vendedor"')
         requisicao_dic = requisicao.json()
-        print(requisicao_dic)
+        # print(requisicao_dic)
 
         # preencher foto perfil
 
