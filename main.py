@@ -65,7 +65,7 @@ class MainApp(App):
         pagina_adicionarvendas = self.root.ids["adicionarvendaspage"]
         label_data = pagina_adicionarvendas.ids["label_data"]
         label_data.text = f'Data:{date.today().strftime("%d/%m/%y")}'
-        print(label_data.text)
+        # print(label_data.text)
 
 
         # carregando infos dos usuários
